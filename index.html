@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Broken Aria labels</h1>
+    <h2>Success</h2>
+    <div class="list-item" id="aria-label-success-1">
+      <button aria-label="Search">🔍</button>
+    </div>
+
+    <div class="list-item" id="aria-label-success-2">
+      <a href="#" aria-label="Go to home">Home</a>
+    </div>
+
+    <div class="list-item" id="aria-label-success-3">
+      <input type="text" aria-label="Search input" />
+    </div>
+
+    <div class="list-item" id="aria-label-success-4">
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#">Link 1</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="list-item" id="aria-label-success-5">
+      <div role="region" aria-label="News section">Latest News</div>
+    </div>
+
+    <div class="list-item" id="aria-label-success-6">
+      <img src="image.jpg" alt="" aria-label="Decorative image" />
+    </div>
+    <h2>Failure</h2>
+    <div class="list-item" id="aria-label-failure-1">
+      <div aria-label="This div is labeled but has no role">Content</div>
+    </div>
+
+    <div class="list-item" id="aria-label-failure-2">
+      <span aria-label="Labeled span but no role">Some text</span>
+    </div>
+
+    <div class="list-item" id="aria-label-failure-3">
+      <p aria-label="Paragraph label">This is a paragraph.</p>
+    </div>
+
+    <div class="list-item" id="aria-label-failure-4">
+      <section aria-label="Section label but no role">Section content</section>
+    </div>
+
+    <div class="list-item" id="aria-label-failure-5">
+      <div aria-label="Aria label with text">
+        This text overrides the aria-label
+      </div>
+    </div>
+
+    <div class="list-item" id="aria-label-failure-6">
+      <article aria-label="Unnecessary article label">Article content</article>
+    </div>
+  </body>
+</html>
